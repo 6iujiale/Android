@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="tv_styles">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">12dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="recycler_items_styles">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">3dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="recycler_items_styles2">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

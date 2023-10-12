@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:paddingVertical="10dp"
+    android:paddingHorizontal="15dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_weather"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/qing" />
+    <!--    当前温度-->
+    <TextView
+        android:id="@+id/tv_tem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--    时间-->
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/recycler_items_styles2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/tv_weather"
+        style="@style/recycler_items_styles2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <!--    白天晚上温度-->
+    <TextView
+        android:id="@+id/tv_tem_low_high"
+        style="@style/recycler_items_styles2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <!--    风力-->
+    <TextView
+        android:id="@+id/tv_win"
+        style="@style/recycler_items_styles2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>

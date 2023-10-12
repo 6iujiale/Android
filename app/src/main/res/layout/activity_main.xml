@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--   android:dropDownVerticalOffset="48dp"-->
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_city"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:overlapAnchor="false"
+            android:layout_marginLeft="14dp"
+            android:popupBackground="@color/trans"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/qing" />
+
+        <!--    当前温度-->
+        <TextView
+            android:id="@+id/tv_tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <!--    时间-->
+        <TextView
+            android:id="@+id/tv_weather"
+            style="@style/tv_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <!--    白天晚上温度-->
+        <TextView
+            android:id="@+id/tv_tem_low_high"
+            style="@style/tv_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <!--    风力-->
+        <TextView
+            android:id="@+id/tv_win"
+            style="@style/tv_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+    <!--    未来七天天气状况-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv_future_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+</RelativeLayout>
